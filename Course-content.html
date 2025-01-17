@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            margin-left: 20% ;
+        }
+        nav {
+            align-items: center;
+            background-color: #005f73;
+            color: white;
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h2 {
+            margin-left: 10%;
+        }
+        nav a {
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0a9396;
+        }
+        .lecture-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lecture-list li {
+            margin: 10px 0;
+        }
+        .lecture-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            border: 2px solid #ddd;
+        }
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>HCI</h2>
+        <div>
+            <a href="Course-outline.html">Course Outline</a>
+            <a href="Instructor-introduction.html">Instructor Introduction</a>
+            <a href="Course-content.html">Course Content</a>
+        </div>
+    </nav>
+    <div class="content">
+    <h1>HCI Lecture Videos</h1>
+    <ul class="lecture-list" style="list-style-type: square;">
+        <li><a href="#" data-video="https://www.youtube.com/embed/PCjP7emhm7M">Lecture 1 || Introduction to HCI</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/mnXLKFGCsLs">Lecture 2 || Human Information Processing Model</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/jzUkeus2Zmk">Lecture 3 || Visual Perception || Gestalt Law</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/2THkpthq8cU">Lecture 4 || Human Information Process Model</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/fIC1XGb_0bg">Lecture 5 || Interactivity</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/vq3LQifjvh0">Lecture 6 || Display Devices</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/8d3rpzew4Rk">Lecture 7 & 8 || Display Devices</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/TlmwNwCgiqI">Lecture 9 || HCI || Interaction</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/aqYPwsH827M">Lecture 10 || Design Guideline || Donald Norman's Model</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/hzWr77RiHRI">Lecture 11 || Ergonomics</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/34RagMbaRhA">Lecture 12 || User Interface Styles</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/IQjbIfjfRsY">Lecture 13 || Form Fill-in Interface</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/lixqP7zDHnw">Lecture 14 || Point And Click Interfaces</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/WyPvp3C-FIg">Lecture 16 || WIMP Interfaces (Windows, Icons, Menus & Pointers)</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/io3jAPzMBs0">Lecture 18 || Analysis Phase</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/Pb467LU9iOs">Lecture 19 || Prototyping || Techniques</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/dXAAEjReQ-s">Lecture 20 || User-Centered Design</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/_ALni56svDA">Lecture 21 || Good User Interface Guidelines</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/3lU3gBMael0">Lecture 22 || Information Presentation Principles</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/XrGRrhL1EFU">Lecture 23 || Information Presentation Principles</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/ZwWqTJMCCcA">Lecture 24 || Color in Design</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/lfXdTB5epj0">Lecture 25 || Heuristic Evaluation</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/rlxn9xBDfFk">Lecture 26 || Web Design Mistakes</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/r3j9uu6h7G8">Lecture 27 || Usability Principles</a></li>
+        <li><a href="#" data-video="https://www.youtube.com/embed/-B3rdw8YtF4">Lecture 28 || Planning The Website</a></li>
+    </ul>
+</div>
+    <iframe id="videoPlayer" src="" allowfullscreen></iframe>
+
+    <footer>
+        <p> 2025 Federal Urdu University of Arts, Science & Technology</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('.lecture-list a');
+        const videoPlayer = document.getElementById('videoPlayer');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const videoUrl = e.target.getAttribute('data-video');
+                videoPlayer.src = videoUrl;
+                videoPlayer.style.display = 'block';
+
+                // Trigger full screen
+                videoPlayer.style.width = "100%";
+                videoPlayer.style.height = "100%";
+                if (videoPlayer.requestFullscreen) {
+                    videoPlayer.requestFullscreen();
+                } else if (videoPlayer.mozRequestFullScreen) { // Firefox
+                    videoPlayer.mozRequestFullScreen();
+                } else if (videoPlayer.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                    videoPlayer.webkitRequestFullscreen();
+                } else if (videoPlayer.msRequestFullscreen) { // IE/Edge
+                    videoPlayer.msRequestFullscreen();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
